@@ -8,11 +8,10 @@
 #        Errors occur when '(' shows up instead of '['. So look.     #
 #        See managevm.sh for original CURL commands used.            #
 # TODO:                                                              #
-# 1. Gather requirements from Rod for the frontend CloudForms tool   #
-# 2. When more than one Network is added it likely will change the   #
+# 1. When more than one Network is added it likely will change the   #
 #    JSON returned and the parsing will need to change.              #
-# 3. Make usage a functon rather than duplicated macro.              #
-# 4. Generictize vms,images,flavors,networks, and loop through       #
+# 2. Make usage a functon rather than duplicated macro.              #
+# 3. Generictize vms,images,flavors,networks, and loop through       #
 #    array on same logic rather than repeated macros.                #
 ######################################################################
 import requests    ## FOR ALL ReSTful CALLS
