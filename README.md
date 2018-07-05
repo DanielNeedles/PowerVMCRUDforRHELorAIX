@@ -63,10 +63,6 @@ No fancy testing for the simple script.  Only a shell script in the test directo
 
 https://www.ibm.com/support/knowledgecenter/SSXK2N_1.3.2/com.ibm.powervc.standard.help.doc/powervc_pg_novacompute_hmc.html#powervc_pg_novacompute__d26793e426
 
-## RedHat Cloud Book
-
-file:///C:/Users/Daniel/Google%20Drive/WORK/CLIENTS/DANIEL_NEEDLES_INC/StoneDoorGroup/Homeland/Mastering_CloudForms_Automation_Red_Hat.pdf
-
 ## Python Web Sessions
 
 http://docs.python-requests.org/en/master/user/advanced/
