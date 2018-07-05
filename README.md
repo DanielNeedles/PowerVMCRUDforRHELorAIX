@@ -1,7 +1,9 @@
 # PowerVMCRUDforRHELorAIX
 Simple CRUD of RHEL and AIX VMs on PowerVM
 
-The program was created to allow Redhat's CloudForms to create RHEL and AIX VMs on IBM's PowerVC using effectively calls to Openstack.  It comes in two flavors: python and bash.  The usage is similar
+The program was created to allow Redhat's CloudForms to create RHEL and AIX VMs on IBM's PowerVC using effectively calls to Openstack.  It comes in two flavors: python and bash.  The usage is similar.
+
+NOTE:  The server IP and port are hardcoded into the script currently.
 
 # PYTHON
 
@@ -209,12 +211,12 @@ https://docs.openstack.org/user-guide/cli-delete-an-instance.html
     Date: Fri, 19 May 2017 06:30:39 GMT
     Server: Apache
     Content-Length: 338
-    Location: https://174.140.140.24:8774/v2/servers/d42c5b75-0f35-480b-8d56-a3ebbdbe35ed
+    Location: https://10.1.1.24:8774/v2/servers/d42c5b75-0f35-480b-8d56-a3ebbdbe35ed
     Content-Type: application/json
     X-Compute-Request-Id: req-96cd5373-ad55-46f6-a848-4f204c8c533d
     Cache-control: max-age=0, no-cache, no-store, must-revalidate
     Pragma: no-cache
-        {"server": {"OS-DCF:diskConfig": "MANUAL", "id": "d42c5b75-0f35-480b-8d56-a3ebbdbe35ed", "links": [{"href": "https://174.140.140.24:8774/v2/servers/d42c5b75-0f35-480b-8d56-a3ebbdbe35ed", "rel": "self"}, {"href": "https://174.140.140.24:8774/servers/d42c5b75-0f35-480b-8d56-a3ebbdbe35ed", "rel": "bookmark"}], "adminPass"
+        {"server": {"OS-DCF:diskConfig": "MANUAL", "id": "d42c5b75-0f35-480b-8d56-a3ebbdbe35ed", "links": [{"href": "https://10.1.1.24:8774/v2/servers/d42c5b75-0f35-480b-8d56-a3ebbdbe35ed", "rel": "self"}, {"href": "https://10.1.1.24:8774/servers/d42c5b75-0f35-480b-8d56-a3ebbdbe35ed", "rel": "bookmark"}], "adminPass"
 
 ## ADD A RHELbe VM:
 
@@ -223,12 +225,12 @@ https://docs.openstack.org/user-guide/cli-delete-an-instance.html
     Date: Fri, 19 May 2017 06:39:03 GMT
     Server: Apache
     Content-Length: 338
-    Location: https://174.140.140.24:8774/v2/servers/abd30328-c712-4946-afd0-2512c1cae7e4
+    Location: https://10.1.1.24:8774/v2/servers/abd30328-c712-4946-afd0-2512c1cae7e4
     Content-Type: application/json
     X-Compute-Request-Id: req-b7bc1bca-ab57-487d-9013-a1da9b985af4
     Cache-control: max-age=0, no-cache, no-store, must-revalidate
     Pragma: no-cache
-    {"server": {"OS-DCF:diskConfig": "MANUAL", "id": "abd30328-c712-4946-afd0-2512c1cae7e4", "links": [{"href": "https://174.140.140.24:8774/v2/servers/abd30328-c712-4946-afd0-2512c1cae7e4", "rel": "self"}, {"href": "https://174.140.140.24:8774/servers/abd30328-c712-4946-afd0-2512c1cae7e4", "rel": "bookmark"}], "adminPass": "AQ7WtxPf2XRd"}}[root@localhost DNEEDLES]#
+    {"server": {"OS-DCF:diskConfig": "MANUAL", "id": "abd30328-c712-4946-afd0-2512c1cae7e4", "links": [{"href": "https://10.1.1.24:8774/v2/servers/abd30328-c712-4946-afd0-2512c1cae7e4", "rel": "self"}, {"href": "https://10.1.1.24:8774/servers/abd30328-c712-4946-afd0-2512c1cae7e4", "rel": "bookmark"}], "adminPass": "fishhead"}}[root@localhost DNEEDLES]#
 
 ## ADD A RHELbl VM:
 
@@ -237,12 +239,12 @@ https://docs.openstack.org/user-guide/cli-delete-an-instance.html
     Date: Fri, 19 May 2017 06:40:37 GMT
     Server: Apache
     Content-Length: 338
-    Location: https://174.140.140.24:8774/v2/servers/e87751bc-7615-4a2c-a705-16a9b94654c1
+    Location: https://10.1.1.24:8774/v2/servers/e87751bc-7615-4a2c-a705-16a9b94654c1
     Content-Type: application/json
     X-Compute-Request-Id: req-be748aa1-30c8-4cb6-b9de-b0e366f45313
     Cache-control: max-age=0, no-cache, no-store, must-revalidate
     Pragma: no-cache
-    {"server": {"OS-DCF:diskConfig": "MANUAL", "id": "e87751bc-7615-4a2c-a705-16a9b94654c1", "links": [{"href": "https://174.140.140.24:8774/v2/servers/e87751bc-7615-4a2c-a705-16a9b94654c1", "rel": "self"}, {"href": "https://174.140.140.24:8774/servers/e87751bc-7615-4a2c-a705-16a9b94654c1", "rel": "bookmark"}], "adminPass": "skzE6yprPhyn"}}[root@localhost DNEEDLES]#
+    {"server": {"OS-DCF:diskConfig": "MANUAL", "id": "e87751bc-7615-4a2c-a705-16a9b94654c1", "links": [{"href": "https://10.0.0.24:8774/v2/servers/e87751bc-7615-4a2c-a705-16a9b94654c1", "rel": "self"}, {"href": "https://10.0.0.24:8774/servers/e87751bc-7615-4a2c-a705-16a9b94654c1", "rel": "bookmark"}], "adminPass": "fishhead"}}[root@localhost DNEEDLES]#
 
 ## LIST TO SHOW VMS:
 
