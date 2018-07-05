@@ -22,6 +22,15 @@ NOTE:  The server IP and port are hardcoded into the script currently.
         vms                                    
         flavors                               
 
+## INSTALL:
+
+The managevm.py script is a standalone script.  It only dependencies are the simplejson python package.
+
+## TEST:
+
+No fancy testing for the simple script.  Only a shell script in the test directory that runs several of the commands.  Note either the test script will need either the managevm.py script local or on the path.
+  
+  
 # BASH
 
 ## PROGRAM: 
@@ -38,6 +47,15 @@ NOTE:  The server IP and port are hardcoded into the script currently.
        remove (VM ID)                                    ## USE ID, NOT NAME
        vms                                               ## LISTS ID THEN NAME
        flavors                                           ## LISTS ID THEN NAME
+
+
+## INSTALL:
+
+The managevm.sh script is a standalone script.  It has no real dependencies except standard Linux/UNIX commands such as curl.
+
+## TEST:
+
+No fancy testing for the simple script.  Only a shell script in the test directory that runs several of the commands.  Note either the test script will need either the managevm.py script local or on the path.
 
 # LINKS
 
