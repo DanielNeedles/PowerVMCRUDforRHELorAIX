@@ -187,7 +187,7 @@ headers = {
 }
 
 ## PERFORM ReSTful COMMAND TO GET CREDENTIAL TOKEN
-data = '{"auth": {"scope": {"project": {"name": "ibm-default", "domain": {"name": "Default"} } }, "identity": { "methods": ["password"], "password": { "user": { "domain": { "name": "Default" }, "name": "root", "password": "Ibmp0wer8" }}}}}'
+data = '{"auth": {"scope": {"project": {"name": "ibm-default", "domain": {"name": "Default"} } }, "identity": { "methods": ["password"], "password": { "user": { "domain": { "name": "Default" }, "name": "root", "password": "PASSWORD" }}}}}'
 res=requests.post('https://' + POWERVMHOST + ':' + POWERVMPORT + '/v3/auth/tokens', headers=headers, data=data, verify=False)
 
 ## TOKEN IS EMBEDDED IN THE HEADER.  SO SCAN ITEMS LISTED IN HEADER AND GRAB TOKEN

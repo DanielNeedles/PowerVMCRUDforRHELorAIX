@@ -116,7 +116,7 @@ export TOKEN=`curl -1 -k -i -s -X POST https://10.0.0.1:5000/v3/auth/tokens -H "
             "name": "Default"
           },
           "name": "root",
-          "password": "Ibmp0wer8"
+          "password": "PASSWORD"
         }
       }
     }
