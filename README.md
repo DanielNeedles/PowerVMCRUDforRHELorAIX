@@ -24,7 +24,7 @@ NOTE:  The server IP and port are hardcoded into the script currently.
 
 ## INSTALL:
 
-The managevm.py script is a standalone script.  Its only dependencies are the simplejson python package.  In the script for the server change the IP address (10.1.1.X), the port (5000), the user (root), and the password (PASSWORD) to the desired values. 
+The managevm.py script is a standalone script.  Its only dependencies are the simplejson python package.  In the script for the server change the IP address (10.1.1.X), the port (5000), the user (root), and the password (PASSWORD) to the desired values.  Also the CRUD of images isn't supported by the script.  The image selection is currently hardcoded and should be modified to taste.
 
 ## TEST:
 
@@ -51,7 +51,7 @@ No fancy testing for the simple script.  Only a shell script in the test directo
 
 ## INSTALL:
 
-The managevm.sh script is a standalone script.  It has no real dependencies except standard Linux/UNIX commands such as curl.  In the script for the server change the IP address (10.1.1.X), the port (5000), the user (root), and the password (PASSWORD) to the desired values.
+The managevm.sh script is a standalone script.  It has no real dependencies except standard Linux/UNIX commands such as curl.  In the script for the server change the IP address (10.1.1.X), the port (5000), the user (root), and the password (PASSWORD) to the desired values.    Also the CRUD of images isn't supported by the script.  The image selection is currently hardcoded and should be modified to taste.
 
 ## TEST:
 
