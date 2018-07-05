@@ -1,7 +1,9 @@
 # PowerVMCRUDforRHELorAIX
 Simple CRUD of RHEL and AIX VMs on PowerVM
 
-The program was created to allow Redhat's CloudForms to create RHEL and AIX VMs on IBM's PowerVC using effectively calls to Openstack.  It comes in two flavors: python and bash.  The usage is similar
+The program was created to allow Redhat's CloudForms to create RHEL and AIX VMs on IBM's PowerVC using effectively calls to Openstack.  It comes in two flavors: python and bash.  The usage is similar.
+
+NOTE:  The server IP and port are hardcoded into the script currently.
 
 # PYTHON
 
