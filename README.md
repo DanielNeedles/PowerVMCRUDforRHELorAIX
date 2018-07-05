@@ -24,7 +24,7 @@ NOTE:  The server IP and port are hardcoded into the script currently.
 
 ## INSTALL:
 
-The managevm.py script is a standalone script.  It only dependencies are the simplejson python package.
+The managevm.py script is a standalone script.  Its only dependencies are the simplejson python package.
 
 ## TEST:
 
